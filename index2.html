@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ishtiaque Ahmed - Portfolio</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/0.160.0/three.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style2.css">
+
+</head>
+<body>
+    <div id="canvas-container"></div>
+
+    <div id="audioControl" class="audio-control paused">🎵</div>
+    <audio id="bgMusic" loop>
+        <source src="image\smith-solace-edm-mix-141706.mp3" type="audio/mpeg">
+    </audio>
+
+    <main class="hero">
+        <div class="glass-card">
+            <div class="profile-image">
+                <img src="image\profile.png" alt="Ishtiaque Ahmed" />
+            </div>
+            <div class="profile-header">
+                <h1>Ishtiaque Ahmed</h1>
+                <p>Researcher | Co-CEO | Machine Learning Engineer</p>
+            </div>
+
+            <div class="social-links">
+                <a href="https://www.facebook.com/ishtiaque.laden.7" class="social-icon facebook">
+                    <i class='bx bxl-facebook'></i>
+                </a>
+                <a href="https://www.linkedin.com/in/ishtiaque-ahmed-8ab799214/" class="social-icon linkedin">
+                    <i class='bx bxl-linkedin'></i>
+                </a>
+                <a href="https://wa.me/qr/T6ZWUABOGGPQJ1" class="social-icon whatsapp">
+                    <i class='bx bxl-whatsapp'></i>
+                </a>
+                <a href="https://github.com/Ishtiaque354/" class="social-icon github">
+                    <i class='bx bxl-github'></i>
+                </a>
+            </div>
+            <div class="section">
+                <h2>About Me</h2>
+                <p>A passionate researcher and entrepreneur with expertise in Machine Learning, AI, and Computer Vision. Currently pursuing BSc in CSE at Daffodil International University while leading innovative projects and research initiatives.</p>
+            </div>
+
+            <div class="section">
+                <h2>Experience</h2>
+                <div class="experience-card">
+                    <h3>Researcher at HIRL LAB</h3>
+                    <p>Sep 2023 - Present</p>
+                    <ul>
+                        <li>Developed deep learning systems for 3D reconstruction</li>
+                        <li>Implemented advanced image processing techniques</li>
+                    </ul>
+                </div>
+                <div class="experience-card">
+                    <h3>Founder and Co-CEO at Q-BIT Learning</h3>
+                    <p>May 2023 - Present</p>
+                    <ul>
+                        <li>Leading educational innovation initiatives</li>
+                        <li>Developing interactive learning content</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>Skills</h2>
+                <div class="skills-grid">
+                    <div class="skill-item">
+                        <div class="skill-front">
+                            <i class="fas fa-brain"></i>
+                            <span>Machine Learning</span>
+                        </div>
+                        <div class="skill-back">
+                            <ul>
+                                <li>Model Training & Validation</li>
+                                <li>Data Preprocessing</li>
+                                <li>Statistical Analysis</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-front">
+                            <i class="fas fa-network-wired"></i>
+                            <span>Deep Learning</span>
+                        </div>
+                        <div class="skill-back">
+                            <ul>
+                                <li>Neural Networks</li>
+                                <li>CNN Architecture</li>
+                                <li>Transfer Learning</li>
+                                <li>Model Optimization</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-front">
+                            <i class="fas fa-eye"></i>
+                            <span>Computer Vision</span>
+                        </div>
+                        <div class="skill-back">
+                            <ul>
+                                <li>Image Processing</li>
+                                <li>Object Detection</li>
+                                <li>Image Segmentation</li>
+                                <li>Feature Extraction</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-front">
+                            <i class="fab fa-python"></i>
+                            <span>Python</span>
+                        </div>
+                        <div class="skill-back">
+                            <ul>
+                                <li>Data Analysis</li>
+                                <li>Web Frameworks</li>
+                                <li>Scientific Computing</li>
+                                <li>Automation Scripts</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-front">
+                        <i class="fas fa-brain"></i>
+                        <span>Data Science</span>
+                        </div>
+                        <div class="skill-back">
+                        <ul>
+                            <li>Machine Learning</li>
+                            <li>Statistical Analysis</li>
+                            <li>Data Visualization</li>
+                            <li>Predictive Modeling</li>
+                        </ul>
+                        </div>
+                    </div>
+      
+                    <div class="skill-item">
+                        <div class="skill-front">
+                        <i class="fas fa-language"></i>
+                        <span>NLP</span>
+                        </div>
+                        <div class="skill-back">
+                        <ul>
+                            <li>Text Processing</li>
+                            <li>Sentiment Analysis</li>
+                            <li>Language Models</li>
+                            <li>Named Entity Recognition</li>
+                        </ul>
+                        </div>
+                    </div>
+      
+                    <div class="skill-item">
+                        <div class="skill-front">
+                        <i class="fab fa-java"></i>
+                        <span>Java</span>
+                        </div>
+                        <div class="skill-back">
+                        <ul>
+                            <li>Enterprise Apps</li>
+                            <li>Spring Framework</li>
+                            <li>Android Development</li>
+                            <li>Microservices</li>
+                        </ul>
+                        </div>
+                    </div>
+      
+                    <div class="skill-item">
+                        <div class="skill-front">
+                        <i class="fas fa-code"></i>
+                        <span>C/C++</span>
+                        </div>
+                        <div class="skill-back">
+                        <ul>
+                            <li>System Programming</li>
+                            <li>Memory Management</li>
+                            <li>Performance Optimization</li>
+                        </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+            <!-- Modified Projects Section -->
+            <div class="section">
+                <h2>Projects</h2>
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <div>
+                            <h3>Diabetics Prediction</h3>
+                            <p>Machine learning model for diabetes prediction using advanced preprocessing and custom pipelines.</p>
+                        </div>
+                        <a href="https://github.com/Ishtiaque354/Diabetics-Prediction-Using-Machine-Learning" class="project-link">
+                            Learn More <i class="fab fa-github"></i>
+                        </a>
+                    </div>
+                    <div class="project-card">
+                        <div>
+                            <h3>Brain Tumor Classification</h3>
+                            <p>CNN-based classification system for brain tumors using transfer learning techniques.</p>
+                        </div>
+                        <a href="https://github.com/Ishtiaque354/Brain-Tumor-Classification-DL" class="project-link">
+                            Learn More <i class="fab fa-github"></i>
+                        </a>
+                    </div>
+                    <div class="project-card">
+                        <div>
+                            <h3>Star Dust Project</h3>
+                            <p>Environmental initiative focusing on dust and PM2.5 level monitoring and mitigation.</p>
+                        </div>
+                        <a href="https://github.com/Ishtiaque354" class="project-link">
+                            Learn More <i class="fab fa-github"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="section">
+                <h2>Educations</h2>
+                <div class="Education-grid">
+                    <div class="Education-card" data-logo="image\diulogoside.png">
+                        <div class="icon-container">
+                            <img src="image\diulogoside.png" alt="Institute 1 Icon" class="institute-icon">
+                        </div>
+                        <h3>Bsc. in CSE</h3>
+                        <h4>Daffodil International University</h4>
+                        <p> 14 MAY 2021 – 20 JUN 2025 <br> Ashulia, Savar, Dhaka, Bangladesh </p>
+                    </div>
+
+                    <div class="Education-card" data-logo="image\1589537468479.jpg">
+                        <div class="icon-container">
+                            <img src="image\1589537468479.jpg" alt="Institute 2 Icon" class="institute-icon">
+                        </div>
+                        <h3>HSC</h3>
+                        <h4>Milestone College</h4>
+                        <p>12 MAY 2017 – 8 MAR 2019 <br> Dhaka, Bangladesh</p>
+                    </div>
+                </div>
+            </div>
+            <div class="section">
+                <h2>Professional Certifications</h2>
+                <div class="certifications-grid">
+                    <div class="cert-card" data-icon="fas fa-brain">
+                        <div class="icon-container">
+                            <i class="fas fa-brain"></i>
+                        </div>
+                        <h3>Data Science & ML</h3>
+                        <div class="cert-details">
+                            <p>
+                                <a href="https://courses.edx.org/certificates/7d0af499948e4c5f8c2fbdd0676f2da4" target="_blank">
+                                    <strong>AI Applications with Watson</strong>
+                                </a>
+                                <br>IBM, 2023
+                            </p>
+                            <p>
+                                <a href="https://www.kaggle.com/ishtiaqueahmed354" target="_blank">
+                                    <strong>Intro to Machine Learning</strong>
+                                </a>
+                                <br>Kaggle, 2023
+                            </p>
+
+                            <p>
+                                <a href="https://courses.edx.org/certificates/4df564c1a7ff475cb756dc168bf7a785" target="_blank">
+                                    <strong>AI for Everyone: Master the Basics</strong>
+                                </a>
+                                <br>edX, 2022
+                            </p>
+                        </div>
+                    </div>
+                    <div class="cert-card" data-icon="fas fa-code">
+                        <div class="icon-container">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <h3>Programming & Cyber Security</h3>
+                        <div class="cert-details">
+                            <p>
+                                <a href="https://www.credly.com/badges/2d5fb64a-4f08-46e8-8ec8-735b091373e1?source=linked_in_profile" target="_blank">
+                                    <strong>Cybersecurity Basics</strong>
+                                </a>
+                                <br>IBM, 2022
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="cert-card" data-icon="fas fa-language">
+                        <div class="icon-container">
+                            <i class="fas fa-language"></i>
+                        </div>
+                        <h3>English and Others</h3>
+                        <div class="cert-details">
+                            <p>
+                                <a href="https://courses.edx.org/certificates/73e1bd8866074b78bb1d55b6fbbab4f3?_gl=1*9vsx0q*_gcl_au*MTExODE2MzcyMS4xNzMyMDE5NTIy*_ga*MTE1ODM1Njk5Ni4xNzMyMDE5NTIy*_ga_D3KS4KMDT0*MTczMjAxOTUyNS4xLjEuMTczMjAxOTU2NC4yMS4wLjA." target="_blank">
+                                    <strong>Preparing to Network in English</strong>
+                                </a>
+                                <br>UWashingtonX, 2023
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            
+        <div class="section">
+                <div class="contact-form">
+                    <h2>Contact Me</h2>
+                    <form>
+                        <div class="form-group">
+                            <input type="text" name="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" name="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea name="message" placeholder="Your Message" rows="4" required></textarea>
+                        </div>
+                        <button type="submit" class="submit-button">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script>
+        document.querySelectorAll('.Education-card').forEach(card => {
+        const logoPath = card.getAttribute('data-logo');
+        const imgElement = card.querySelector('.institute-icon');
+        imgElement.src = logoPath;
+        });
+
+        const audioControl = document.getElementById('audioControl');
+        const bgMusic = document.getElementById('bgMusic');
+
+        audioControl.addEventListener('click', () => {
+            if (bgMusic.paused) {
+                bgMusic.play();
+                audioControl.classList.remove('paused');
+                audioControl.classList.add('playing');
+                document.body.style.backgroundColor = '#e0ffe0'; 
+            } else {
+                bgMusic.pause();
+                audioControl.classList.remove('playing');
+                audioControl.classList.add('paused');
+                document.body.style.backgroundColor = '#ffe0e0'; 
+            }
+        });
+
+        const scene = new THREE.Scene();
+        const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
+        const renderer = new THREE.WebGLRenderer({ alpha: true });
+        renderer.setSize(window.innerWidth, window.innerHeight);
+        document.getElementById('canvas-container').appendChild(renderer.domElement);
+
+        const particlesGeometry = new THREE.BufferGeometry();
+        const particlesCount = 200;
+        const posArray = new Float32Array(particlesCount * 3);
+
+        for(let i = 0; i < particlesCount * 3; i++) {
+            posArray[i] = (Math.random() - 0.5) * 100;
+        }
+
+        particlesGeometry.setAttribute('position', new THREE.BufferAttribute(posArray, 3));
+
+        const particlesMaterial = new THREE.PointsMaterial({
+            size: 0.5,
+            color: 0xffffff,
+            transparent: true,
+            opacity: 0.8
+        });
+
+        const particlesMesh = new THREE.Points(particlesGeometry, particlesMaterial);
+        scene.add(particlesMesh);
+        camera.position.z = 50;
+
+        function animate() {
+            requestAnimationFrame(animate);
+            particlesMesh.rotation.x += 0.0005;
+            particlesMesh.rotation.y += 0.0005;
+            renderer.render(scene, camera);
+        }
+        animate();
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, { threshold: 0.1 });
+
+        document.querySelectorAll('.section').forEach(section => {
+            observer.observe(section);
+        });
+
+        // Audio control
+        let isPlaying = false;
+        const audio = document.getElementById('bgMusic');
+        
+        function toggleAudio() {
+            if (isPlaying) {
+                audio.pause();
+            } else {
+                audio.play();
+            }
+            isPlaying = !isPlaying;
+        }
+
+        window.addEventListener('resize', () => {
+            camera.aspect = window.innerWidth / window.innerHeight;
+            camera.updateProjectionMatrix();
+            renderer.setSize(window.innerWidth, window.innerHeight);
+        });
+    </script>
+</body>
+</html>
